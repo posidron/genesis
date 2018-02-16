@@ -16,7 +16,7 @@ ProductVersion:	10.13.3
 ## Bootstrap
 
 ```bash
-bash < (curl -s https://raw.githubusercontent.com/posidron/genesis/master/setup)
+bash <(curl -s https://raw.githubusercontent.com/posidron/genesis/master/install)
 ```
 
 ## Development
