@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+genesis="$(cd "$(dirname "$0")/.." && pwd -P)"
+source "$genesis/modules/common"
+
+title "MacOS"
+
+required_osx_version="10.13.0"
+osx_version=$(/usr/bin/sw_vers -productVersion)
+
+info "Checking version of MacOS"
+if [ "$(version "$osx_version")" -lt "$(version "$required_osx_version")" ]
+then
+  error "Your MacOS $osx_version version is older then required $required_osx_version version. Exiting"
+  exit
+fi

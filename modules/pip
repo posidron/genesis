@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+genesis="$(cd "$(dirname "$0")/.." && pwd -P)"
+source "$genesis/modules/common"
+
+title "Python Packages"
+
+info "Installing pip2 packages"
+sudo pip2 install -r assets/packages.pip2
+
+info "Installing pip3 packages"
+sudo pip3 install -r assets/packages.pip3

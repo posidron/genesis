@@ -1,0 +1,50 @@
+#!/usr/bin/env bash
+
+# http://wiki.bash-hackers.org/scripting/terminalcodes
+bold=$(tput bold)
+red=$(tput setaf 1)
+green=$(tput setaf 2)
+reset=$(tput sgr0)
+
+title() {
+  printf "\\n${bold}%s${reset}\\n" "$1"
+}
+
+error() {
+  printf "\\n[!] ${red}%s.${reset}\\n" "$1"
+}
+
+info() {
+  printf "[*] ${green}%s ...${reset}\\n" "$1"
+}
+
+version() {
+  echo "$@" | awk -F. '{ printf("%d%03d%03d%03d\n", $1,$2,$3,$4); }'
+}
+
+catch_exit() {
+  ret=$?
+  test $ret -ne 0 && error "Installation failed" >&2
+  exit $ret
+}
+
+# Setup logging
+exec > >(tee -i "$HOME/.genesis.$(date +%Y-%m-%d-%H-%M-%S).log")
+exec 2>&1
+
+# Catch exit
+trap catch_exit EXIT
+
+# Handle sudo session
+startsudo() {
+    sudo -v
+    (while true; do sudo -v; sleep 300; done;) &
+    SUDO_PID=$!
+    trap stopsudo SIGINT SIGTERM
+}
+
+stopsudo() {
+    kill "$SUDO_PID"
+    trap - SIGINT SIGTERM
+    sudo -k
+}

@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+genesis="$(cd "$(dirname "$0")/.." && pwd -P)"
+source "$genesis/modules/common"
+
+title "Visual Studio Code"
+
+info "Installing extensions"
+
+while read -r line
+do
+    code --install-extension "$line"
+done < "assets/packages.vscode"

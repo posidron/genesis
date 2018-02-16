@@ -1,0 +1,21 @@
+#!/usr/bin/env bash
+genesis="$(cd "$(dirname "$0")/.." && pwd -P)"
+source "$genesis/modules/common"
+
+title "Homebrew"
+
+if test ! "$(which brew)"
+then
+  info "Install Homebrew"
+  ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+else
+  info "Update Homebrew"
+  brew update
+fi
+
+info "Install Homebrew formulas"
+brew tap "Homebrew/bundle" 2> /dev/null
+brew bundle --file="$genesis/assets/Brewfile"
+
+info "Cleanup Homebrew"
+brew cleanup

@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+genesis="$(cd "$(dirname "$0")/.." && pwd -P)"
+source "$genesis/modules/common"
+
+title "Setup Crontab"
+
+crontab -r
+(crontab -l;
+cat << EOF
+MAILTO=""
+SHELL=/usr/local/bin/fish
+PATH=/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
+@daily update > /tmp/update.log 2>&1
+EOF
+) | crontab -

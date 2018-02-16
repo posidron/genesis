@@ -1,0 +1,29 @@
+{
+  "name": "genesis",
+  "version": "1.0.0",
+  "description": "Bootstrap utility for MacOS",
+  "main": " ",
+  "scripts": {
+    "test": "shellcheck --shell bash --exclude=SC1090 modules/* setup",
+    "precommit": "npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/posidron/genesis.git"
+  },
+  "keywords": [
+    "bootstrap",
+    "macos",
+    "bash",
+    "automation"
+  ],
+  "author": "posidron",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/posidron/genesis/issues"
+  },
+  "homepage": "https://github.com/posidron/genesis#readme",
+  "devDependencies": {
+    "husky": "^0.14.3"
+  }
+}

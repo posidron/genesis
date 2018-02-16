@@ -1,0 +1,17 @@
+#!/usr/bin/env bash
+genesis="$(cd "$(dirname "$0")/.." && pwd -P)"
+source "$genesis/modules/common"
+
+title "TeamViewer"
+
+info "Hide Teamviewer in the Dock"
+
+startsudo
+
+sudo killall TeamViewer_Service
+sudo killall TeamViewer
+sudo killall TeamViewer_Desktop
+sudo perl -i -0pe "s/<\\/dict>\\n<\\/plist>/\\t<key>LSUIElement<\\/key>\\n\\t<string>1<\\/string>\\n<\\/dict>\\n<\\/plist>/g" /Applications/TeamViewer.app/Contents/Info.plist
+sudo codesign -f -s - /Applications/TeamViewer.app
+sudo launchctl unload /Library/LaunchDaemons/com.teamviewer.teamviewer_service.plist
+sudo launchctl load /Library/LaunchDaemons/com.teamviewer.teamviewer_service.plist

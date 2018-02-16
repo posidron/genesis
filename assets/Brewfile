@@ -1,0 +1,109 @@
+# Video Chat
+cask "skype"
+
+# Network / Sharing Accessibility
+cask "teamviewer"
+cask "transmit"
+cask "viscosity"
+cask "google-backup-and-sync"
+cask "cryptomator"
+
+# Media & Photography
+cask "iina"
+cask "capture-one"
+cask "affinity-photo-beta"
+cask "oceanaudio"
+
+# Development
+cask "iterm2"
+cask "visual-studio-code"
+cask "docker"
+cask "vmware-fusion"
+
+# Web Development
+cask "postman"
+cask "robo-3t"
+
+# Extended System Capabilities
+cask "alfred"
+cask "bartender"
+cask "the-unarchiver"
+cask "hyperdock"
+cask "osxfuse"
+cask "cdock"
+cask "easysimbl"
+cask "qlstephen"
+cask "qlcolorcode"
+cask "qlmarkdown"
+cask "quicklook-json"
+cask "webpquicklook"
+cask "qlvideo"
+
+# Visual Studio Font
+tap "caskroom/fonts"
+cask "font-fira-code"
+
+# ----------------------------------------------------------------------------
+
+# Essentials
+brew "fish"
+brew "fzy"
+brew "fasd"
+brew "ack"
+brew "htop"
+brew "exa"
+brew "mosh"
+brew "nano"
+brew "curl"
+brew "wget"
+brew "git"
+brew "mercurial"
+brew "tmux"
+brew "mackup"
+brew "testdisk"
+brew "xz"
+brew "ripgrep"
+brew "terminal-notifier"
+brew "arp-scan"
+brew "sshfs"
+brew "translate-shell"
+brew "mosh"
+brew "ruby"
+brew "tree"
+
+# Security
+brew "afl-fuzz"
+brew "arp-scan"
+brew "bettercap"
+
+# Development
+brew "llvm"
+brew "cmake"
+brew "source-highlight"
+brew "icdiff"
+brew "android-platform-tools"
+brew "watchman"
+brew "gdb"
+
+# - Python
+brew "ipython"
+brew "python"
+brew "python3"
+brew "flake8"
+
+# - Web Development
+brew "node"
+brew "v8"
+brew "mongodb"
+brew "redis"
+brew "heroku"
+
+# Multimedia
+brew "ffmpeg"
+brew "mpv"
+brew "lame"
+brew "x264"
+brew "x265"
+brew "xvid"
+brew "sox"
+

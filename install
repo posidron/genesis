@@ -1,0 +1,36 @@
+#!/usr/bin/env bash
+set -x
+
+clear
+
+GENESIS=${GENESIS:-"$HOME/.genesis"}
+
+if [ ! -d "$GENESIS" ]
+then
+  git clone -b master https://github.com/posidron/genesis.git "$GENESIS"
+fi
+
+modules=(
+  version
+  defaults
+  brew
+  pip
+  crontab
+  teamviewer
+  iterm
+  vscode
+)
+
+for module in "${modules[@]}"
+do
+  bash "$GENESIS/modules/$module"
+done
+
+# Reboot
+printf "\\n\\nGenesis accomplished. \\o/\\n\\n"
+read -p "Do you want to reboot? [y/n]" -n 1 -r
+if [[ $REPLY =~ ^[Yy]$ ]]
+then
+  echo ''
+  sudo reboot
+fi
