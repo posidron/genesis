@@ -4,7 +4,7 @@ source "$genesis/modules/common"
 
 title "Homebrew"
 
-if test ! "$(which brew)"
+if test ! "$(command -v brew)"
 then
   info "Install Homebrew"
   ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"

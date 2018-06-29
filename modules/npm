@@ -6,4 +6,4 @@ title "NPM"
 
 info "Installing global packages"
 
-cat "assets/npm.txt" | xargs npm install -g
+cat < "assets/npm.txt" | xargs npm install -g
