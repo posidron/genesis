@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+genesis="$(cd "$(dirname "$0")/.." && pwd -P)"
+source "$genesis/modules/common"
+
+title "NPM"
+
+info "Installing global packages"
+
+cat "assets/npm.txt" | xargs npm install -g

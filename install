@@ -19,6 +19,7 @@ modules=(
   teamviewer
   iterm
   vscode
+  npm
 )
 
 for module in "${modules[@]}"

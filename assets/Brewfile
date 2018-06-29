@@ -1,3 +1,6 @@
+# Casks
+# ----------------------------------------------------------------------------
+
 # Video Chat
 cask "skype"
 
@@ -6,6 +9,7 @@ cask "teamviewer"
 cask "transmit"
 cask "viscosity"
 cask "google-backup-and-sync"
+cask "dropbox"
 cask "cryptomator"
 
 # Media & Photography
@@ -43,13 +47,13 @@ cask "qlvideo"
 tap "caskroom/fonts"
 cask "font-fira-code"
 
+# Brews
 # ----------------------------------------------------------------------------
 
 # Essentials
 brew "fish"
 brew "fzy"
 brew "fasd"
-brew "ack"
 brew "htop"
 brew "exa"
 brew "mosh"
@@ -70,6 +74,7 @@ brew "translate-shell"
 brew "mosh"
 brew "ruby"
 brew "tree"
+brew "rg"
 
 # Security
 brew "afl-fuzz"
@@ -84,6 +89,7 @@ brew "icdiff"
 brew "android-platform-tools"
 brew "watchman"
 brew "gdb"
+brew "micro"
 
 # - Python
 brew "ipython"
@@ -97,6 +103,7 @@ brew "v8"
 brew "mongodb"
 brew "redis"
 brew "heroku"
+cask "webstorm"
 
 # Multimedia
 brew "ffmpeg"
