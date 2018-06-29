@@ -93,7 +93,7 @@ brew "micro"
 brew "pinetree"
 brew "credstash"
 brew "bfg
-brew "shellsheck"
+brew "shellcheck"
 brew "hadolint"
 
 # - Python
