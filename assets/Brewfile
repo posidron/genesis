@@ -23,6 +23,7 @@ cask "iterm2"
 cask "visual-studio-code"
 cask "docker"
 cask "vmware-fusion"
+cask "webstorm"
 
 # Web Development
 cask "postman"
@@ -71,7 +72,6 @@ brew "terminal-notifier"
 brew "arp-scan"
 brew "sshfs"
 brew "translate-shell"
-brew "mosh"
 brew "ruby"
 brew "tree"
 brew "rg"
@@ -90,11 +90,15 @@ brew "android-platform-tools"
 brew "watchman"
 brew "gdb"
 brew "micro"
+brew "pinetree"
+brew "credstash"
+brew "bfg
+brew "shellsheck"
+brew "hadolint"
 
 # - Python
-brew "ipython"
-brew "python"
 brew "python3"
+brew "ipython"
 brew "flake8"
 
 # - Web Development
@@ -103,7 +107,6 @@ brew "v8"
 brew "mongodb"
 brew "redis"
 brew "heroku"
-cask "webstorm"
 
 # Multimedia
 brew "ffmpeg"

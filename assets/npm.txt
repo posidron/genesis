@@ -2,3 +2,4 @@ spoof
 vue-cli
 react-native-cli
 npm-check
+lib.cli
