@@ -80,6 +80,7 @@ brew "rg"
 brew "afl-fuzz"
 brew "arp-scan"
 brew "bettercap"
+brew "gnupg"
 
 # Development
 brew "llvm"
