@@ -93,7 +93,7 @@ brew "gdb"
 brew "micro"
 brew "pinetree"
 brew "credstash"
-brew "bfg
+brew "bfg"
 brew "shellcheck"
 brew "hadolint"
 
