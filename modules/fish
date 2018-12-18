@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+genesis="$(cd "$(dirname "$0")/.." && pwd -P)"
+source "$genesis/modules/common"
+
+title "Setup Fish Shell"
+chsh -s /usr/bin/fish
+fish
+
+git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
+~/.fzf/install
+
+info "Install fisher package manager"
+curl -Lo ~/.config/fish/functions/fisher.fish --create-dirs https://git.io/fisher
+fisher install bass fzf fzy z decors/fish-colored-man decors/fish-colors edc/bass

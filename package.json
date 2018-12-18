@@ -4,8 +4,12 @@
   "description": "Bootstrap utility for MacOS",
   "main": " ",
   "scripts": {
-    "test": "shellcheck --shell bash --exclude=SC1090 modules/* setup",
-    "precommit": "npm test"
+    "test": "shellcheck --shell bash --exclude=SC1090 modules/* install"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm test"
+    }
   },
   "repository": {
     "type": "git",
@@ -24,6 +28,6 @@
   },
   "homepage": "https://github.com/posidron/genesis#readme",
   "devDependencies": {
-    "husky": "^0.14.3"
+    "husky": "^1.0.0-rc.9"
   }
 }

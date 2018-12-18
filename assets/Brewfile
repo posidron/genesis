@@ -1,3 +1,6 @@
+# Casks
+# ----------------------------------------------------------------------------
+
 # Video Chat
 cask "skype"
 
@@ -5,6 +8,7 @@ cask "skype"
 cask "teamviewer"
 cask "transmit"
 cask "google-backup-and-sync"
+cask "dropbox"
 cask "cryptomator"
 
 # Media & Photography
@@ -16,6 +20,7 @@ cask "iterm2"
 cask "visual-studio-code"
 cask "docker"
 cask "vmware-fusion"
+cask "webstorm"
 
 # Web Development
 #cask "postman"
@@ -38,13 +43,13 @@ cask "qlvideo"
 tap "caskroom/fonts"
 cask "font-fira-code"
 
+# Brews
 # ----------------------------------------------------------------------------
 
 # Essentials
 brew "fish"
 brew "fzy"
 brew "fasd"
-brew "ack"
 brew "htop"
 brew "exa"
 brew "mosh"
@@ -61,9 +66,9 @@ brew "ripgrep"
 brew "terminal-notifier"
 brew "sshfs"
 brew "translate-shell"
-brew "mosh"
 brew "ruby"
 brew "tree"
+brew "rg"
 
 # Security
 brew "afl-fuzz"
@@ -86,9 +91,17 @@ brew "tox"
 brew "credstash"
 brew "shellcheck"
 brew "pipenv"
+brew "gdb"
+brew "micro"
+brew "pinetree"
+brew "credstash"
+brew "bfg"
+brew "shellcheck"
+brew "hadolint"
 
 # - Python
 brew "python3"
+brew "ipython"
 brew "flake8"
 
 # - Web Development

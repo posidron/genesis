@@ -5,6 +5,7 @@ source "$genesis/modules/common"
 title "iTerm"
 
 info "Replace iTerm2 with Terminal icon"
+
 cp /Applications/Utilities/Terminal.app/Contents/Resources/Terminal.icns /Applications/iTerm.app/Contents/Resources/AppIcon.icns
 touch /Applications/iTerm.app
 /System/Library/Frameworks/CoreServices.framework/Frameworks/LaunchServices.framework/Support/lsregister -f /Applications/iTerm.app
