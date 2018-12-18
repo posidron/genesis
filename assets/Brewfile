@@ -13,7 +13,7 @@ cask "cryptomator"
 
 # Media & Photography
 cask "iina"
-cask "oceanaudio"
+cask "ocenaudio"
 
 # Development
 cask "iterm2"
