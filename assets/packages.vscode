@@ -7,8 +7,12 @@ esbenp.prettier-vscode
 formulahendry.code-runner
 ms-python.python
 ms-vscode.cpptools
-ms-vscode.csharp
 msjsdiag.debugger-for-chrome
 robertohuertasm.vscode-icons
 rust-lang.rust
 zhuangtongfa.Material-theme
+wix.vscode-import-cost
+dbaeumer.vscode-eslint
+ms-vscode.github-issues-prs
+christian-kohler.npm-intellisense
+

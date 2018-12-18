@@ -4,7 +4,7 @@ source "$genesis/modules/common"
 
 title "MacOS"
 
-required_osx_version="10.13.0"
+required_osx_version="10.14.2"
 osx_version=$(/usr/bin/sw_vers -productVersion)
 
 info "Checking version of MacOS"

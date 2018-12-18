@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+genesis="$(cd "$(dirname "$0")/.." && pwd -P)"
+source "$genesis/modules/common"
+
+title "NPM Packages"
+
+info "Installing NPM packages"
+# shellcheck disable=SC2002
+cat assets/packages.npm | xargs npm install -g
