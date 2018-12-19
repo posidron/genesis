@@ -14,7 +14,8 @@ else
 fi
 
 info "Install Homebrew formulas"
-brew tap "Homebrew/bundle" 2> /dev/null
+brew tap "homebrew/bundle" 2> /dev/null
+brew tap "homebrew/cask-versions" 2> /dev/null
 brew bundle --file="$genesis/assets/Brewfile"
 
 info "Cleanup Homebrew"
