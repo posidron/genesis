@@ -8,12 +8,14 @@ cask "skype"
 cask "teamviewer"
 cask "transmit"
 cask "google-backup-and-sync"
-cask "dropbox"
 cask "cryptomator"
+cask "expressvpn"
 
 # Media & Photography
 cask "iina"
 cask "ocenaudio"
+cask "jdownloader"
+cask "adobe-creative-cloud"
 
 # Development
 cask "iterm2"
@@ -22,6 +24,7 @@ cask "docker"
 cask "vmware-fusion"
 cask "webstorm"
 cask "android-platform-tools"
+cask "android-sdk"
 cask "java"
 
 # Web Development
@@ -40,6 +43,7 @@ cask "qlmarkdown"
 cask "quicklook-json"
 cask "webpquicklook"
 cask "qlvideo"
+cask "monity-helper"
 
 # Visual Studio Font
 tap "caskroom/fonts"
@@ -99,6 +103,8 @@ brew "credstash"
 brew "bfg"
 brew "shellcheck"
 brew "hadolint"
+brew "jadx"
+brew "apktool"
 
 # - Python
 brew "python3"
