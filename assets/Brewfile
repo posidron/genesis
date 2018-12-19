@@ -22,6 +22,7 @@ cask "docker"
 cask "vmware-fusion"
 cask "webstorm"
 cask "android-platform-tools"
+cask "java"
 
 # Web Development
 #cask "postman"
