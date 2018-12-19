@@ -6,4 +6,4 @@ title "NPM Packages"
 
 info "Installing NPM packages"
 # shellcheck disable=SC2002
-cat assets/packages.npm | xargs npm install -g
+cat "$genesis/assets/packages.npm" | xargs npm install -g

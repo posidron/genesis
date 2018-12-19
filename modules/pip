@@ -5,7 +5,7 @@ source "$genesis/modules/common"
 title "Python Packages"
 
 info "Installing pip2 packages"
-sudo pip2 install -r assets/packages.pip2
+sudo pip2 install -r "$genesis/assets/packages.pip2"
 
 info "Installing pip3 packages"
-sudo pip3 install -r assets/packages.pip3
+sudo pip3 install -r "$genesis/assets/packages.pip3"

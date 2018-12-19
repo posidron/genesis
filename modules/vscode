@@ -9,4 +9,4 @@ info "Installing extensions"
 while read -r line
 do
     code --install-extension "$line"
-done < "assets/packages.vscode"
+done < "$genesis/assets/packages.vscode"
